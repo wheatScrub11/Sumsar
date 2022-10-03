@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    list-style-type: none;
+}
+
+.navbar-container{
+    width: 100%;
+    background-color: rgb(199, 229, 255);
+}
+
+.navbar{
+    display: flex;
+    width: 800px;
+    background-color: rgb(255, 209, 209);
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigate{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.Link{
+    cursor: pointer;
+    padding: 0.3em;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px rgba(193, 193, 193, 0.628);
+}
+.user{
+    display: flex;
+    align-items: center;
+}
