@@ -1,5 +1,5 @@
 import { auth, provider } from "../config/firebase";
-import { signInWithRedirect, onAuthStateChanged } from "firebase/auth";
+import { signInWithPopup, onAuthStateChanged } from "firebase/auth";
 
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
@@ -11,7 +11,7 @@ function Login() {
   const navigate = useNavigate();
 
   const signInWithGoogle = async () => {
-    const singedUser = await signInWithRedirect(auth, provider);
+    const singedUser = await signInWithPopupi(auth, provider);
     navigate("/Sumsar");
   };
 
