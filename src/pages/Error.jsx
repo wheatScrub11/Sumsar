@@ -1,11 +1,9 @@
-import React from 'react'
-
+import React from "react";
+import { useNavigate } from "react-router-dom";
 function Error() {
-  return (
-    <div>This url doesnt existe</div>
-  )
+  const navigate = useNavigate();
+  navigate("/Sumsar")
+  return <div onClick={navigate("/")}>This url doesnt exist</div>;
 }
 
-// will add some logic to redirect to the homepage!!
-
-export default Error
+export default Error;

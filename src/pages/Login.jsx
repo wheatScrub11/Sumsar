@@ -13,11 +13,11 @@ function Login() {
 
   const signInWithGoogle = async () => {
     const singedUser = await signInWithPopup(auth, provider);
-    navigate("/");
+    navigate("/Sumsar");
   };
 
   useEffect(() => {
-    onAuthStateChanged(auth, (user) => (user ? navigate("/") : false));
+    onAuthStateChanged(auth, (user) => (user ? navigate("/Sumsar") : false));
   }, []);
 
   return (

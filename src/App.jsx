@@ -8,8 +8,8 @@ import Login from "./Pages/Login";
 function App() {
   return <div className="App">
     <Routes>
-      <Route path="/" element={<Main />}/>
-      <Route path="/login" element={<Login />}/>
+      <Route path="/Sumsar" element={<Main />}/>
+      <Route path="/Sumsar/login" element={<Login />}/>
       <Route path="*" element={<Error />}/>
     </Routes>
   </div>;

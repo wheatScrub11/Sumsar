@@ -14,7 +14,7 @@ function Navbar() {
             Sumsar Icon sumsar
         </div>
         <div className="navigate">
-          <Link to={"/"} className="Link">
+          <Link to={"/Sumsar"} className="Link">
             Home
           </Link>
           {user != null ? (
@@ -24,7 +24,7 @@ function Navbar() {
               <button onClick={() => signOut(auth)}>Log Out</button>
             </div>
           ) : (
-            <Link to={"/login"} className="Link">
+            <Link to={"/Sumsar/login"} className="Link">
               Login
             </Link>
           )}
