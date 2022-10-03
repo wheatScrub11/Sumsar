@@ -11,7 +11,7 @@ function Login() {
   const navigate = useNavigate();
 
   const signInWithGoogle = async () => {
-    const singedUser = await signInWithPopupi(auth, provider);
+    const singedUser = await signInWithPopup(auth, provider);
     navigate("/Sumsar");
   };
 
